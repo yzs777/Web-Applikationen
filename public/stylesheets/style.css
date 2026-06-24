@@ -1,0 +1,225 @@
+:root {
+    /* globale Variablen für Farben */
+    --sand-bg: #f4efe7;
+    --eukalyptus: #8aa59a;
+    --pflaume: #5b4a66;
+    --text-color: #333;
+}
+
+
+body {
+    background-color: var(--sand-bg);
+    color: var(--text-color);
+    font-family: 'Manrope', sans-serif;
+    padding-top: 76px;
+    /* Platz für die fixe Navbar */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--pflaume) !important;
+    font-family: 'Lora', serif !important;
+}
+
+.navbar {
+    background-color: var(--sand-bg) !important;
+}
+
+
+.img-fluid {
+    border-radius: 1rem !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+    transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.02);
+    /* das von KI! */
+}
+
+.card {
+    border-radius: 1rem !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    /* das mit KI! */
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.01) !important;
+}
+
+.card-img-top {
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+}
+
+
+.card-img-fixed {
+    height: 320px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    background-color: var(--eukalyptus) !important;
+    border-color: var(--eukalyptus) !important;
+    color: white !important;
+    transition: background-color 0.3s ease, color 0.3s ease !important;
+
+
+}
+
+.btn-primary:hover {
+    background-color: #728a80 !important;
+    border-color: #728a80 !important;
+    color: white !important;
+}
+
+.btn-outline-secondary {
+    color: var(--eukalyptus) !important;
+    border-color: var(--eukalyptus) !important;
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--eukalyptus) !important;
+    color: white !important;
+}
+
+.nav-pills .nav-link {
+    color: var(--text-color) !important;
+    border-radius: 0.5rem;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--eukalyptus) !important;
+    color: white !important;
+}
+
+
+/*Links*/
+
+
+
+
+@media (min-width: 992px) {
+    .navbar .nav-link {
+        position: relative;
+        color: var(--pflaume) !important;
+        font-weight: 500;
+        text-decoration: none !important;
+        transition: color 0.3s ease;
+    }
+
+
+    .navbar .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 50%;
+        background-color: var(--pflaume) !important;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .nav-link:hover::after {
+        width: 100%;
+        left: 0;
+    }
+}
+
+.auth-link {
+    color: var(--pflaume) !important;
+    text-decoration: underline !important;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.auth-link:hover {
+    color: #42354a !important;
+    text-decoration: underline !important;
+}
+
+.navbar .nav-link:hover {
+    color: #42354a !important;
+}
+
+.navbar-brand {
+    text-decoration: none !important;
+}
+
+.navbar-brand:hover {
+    text-decoration: none !important;
+}
+
+.form-check-input:checked {
+    background-color: var(--eukalyptus) !important;
+    border-color: var(--eukalyptus) !important;
+}
+
+.form-control {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+}
+
+
+/* Badge-Farbe für die Kategorien */
+.badge-eukalyptus {
+    background-color: #8da399; /* Ein schönes Eukalyptus-Grün */
+    color: #ffffff;
+    font-size: 0.75rem;
+}
+
+/* Damit die Buttons im Kursplan auch schön aussehen */
+.btn-rounded {
+    border-radius: 50px;
+}
+
+.text-pflaume {
+    color: #4a3746; /* Ein dunklerer Farbton für Überschriften */
+}
+
+a {
+    color: var(--eukalyptus);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--pflaume)
+}
+
+.profile-avatar-wrapper {
+    width:100px;
+    height: 100px;
+}
+
+.profile-avatar-icon {
+    font-size: 3rem;
+}
+
+.card-static:hover {
+    transform : none !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+.border-eukalyptus {
+    border-color: var(--eukalyptus, #4a6b5d) !important;
+}
+
+.shadow-xs {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.trainer-img {
+    width:120px;
+    height:120px;
+    object-fit: cover;
+}
+
+.text-eukalyptus {
+    color: var(--eukalyptus) !important;
+}

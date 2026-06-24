@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance Yoga Wiesbaden - User-dashboard</title>
+
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">Balance Yoga Wiesbaden</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Startseite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kurse.html">Kursplan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trainer.html">Trainerprofile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="workshops.html">Workshops & Retreats</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto"> 
+                    <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>    
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-pflaume fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-circle me-1"></i>Mein Konto
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end border-0 shadow-sm" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="user-dashboard.html">Mein Dashboard</a></li>
+                            <li><a class="dropdown-item" href="profil-bearbeiten.html">Profil bearbeiten</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="index.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    
+<!--User-Dashboard-->
+
+<div class="container my-5">
+    <div class="row mb-4">
+        <div class="col">
+            <h2 class="fw-bold text-pflaume">Hallo, schön dass du da bist!</h2>
+            <p class="text-muted">Hier siehst du deine gebuchten Kurse und deinen aktuellen Status</p>
+        </div>
+    </div>
+
+    <!--Tabelle Spalten-->
+
+    <div class="card border-0 shadow-sm">
+        <div class="card-body p-4">
+            <h3 class="h5 mb-4 fw-bold text-pflaume">Meine anstehenden Buchungen</h3>
+
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+                    <thead class="table-light text-muted text-uppercase fs-7">
+                        <tr>
+                            <th scope="col">Kurs</th>
+                            <th scope="col">Uhrzeit</th>
+                            <th scope="col">Trainer</th>
+                            <th scope="col">Raum</th>
+                            <th scope="col">Status</th>
+                            <th scope="col" class="text-end">Aktion</th>
+                        </tr>
+                    </thead>
+
+                    <!--Tabelle Zeilen-->
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center flex-wrap gap-2 mb-1">
+                                <span class="fw-bold text-dark">Hatha Yoga Basic</span>
+                                <span class="badge rounded-pill badge-eukalyptus">Entspannung</span> 
+                                </div>
+                                <span class="d-block text-muted fs-7">Level: Anfänger</span>
+                            </td>
+                            <td>Mo, 22.06. <span class="text-muted">|</span> 09:00-10:30 Uhr</td>
+                            <td>Sarah</td>
+                            <td>Shanti-Raum</td>
+                            <td>
+                                <span class="badge bg-success bg-opacity-10 text-success px-2 py-1">Bestätigt</span>
+                            </td>
+                            <td class="text-end">
+                                <button class="btn btn-sm btn-outline-danger border-0">Stornieren</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center flex-wrap gap-2 mb-1">
+                                <span class="fw-bold text-dark me-2">Power Yoga</span>
+                                <span class="badge rounded-pill badge-eukalyptus">Dynamisch</span>
+                                </div>
+                                <span class="d-block text-muted fs-7">Level: Fortgeschritten</span>
+                            </td>
+                            <td>Mi, 24.06. <span class="text-muted">|</span> 12:15 - 13:00 Uhr</td>
+                            <td>Elena</td>
+                            <td>Prana-Raum</td>
+                            <td>
+                                <span class="badge bg-warning bg-opacity-10 text-warning px-2 py-1">Warteliste (Platz 2)</span>
+                            </td>
+                            <td class="text-end">
+                                <button class="btn btn-sm btn-outline-danger border-0">Abmelden</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+<!--Falls User noch nichts gebucht hat. bei erste Zeile d-none hinzufügen um das nicht zu sehen sondern nur die gebuchten kurse-->
+
+<div class="card border-0 shadow-sm text-center py-5">
+    <div class="card-body">
+        <div class="mb-3 text-muted opacity-50">
+            <i class="bi bi-calendar2-week" style="font-size: 2.5rem;"></i>
+        </div>
+
+        <h3 class="h5 fw-bold text-pflaume mb-2">Noch keine Yoga-Kurse gebucht</h3>
+        <p class="text-muted mx-auto mb-4" style="max-width: 420px;">
+            Dein Terminkalender ist aktuell noch leer. Schau dir unseren Kursplan und finde die Klasse, die am besten zu deiner heutigen Energie passt!
+        </p>
+
+        <a href="kurse.html" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm">
+            Jetzt Kurse entdecken
+        </a>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Footer  -->
+    <footer class="bg-light text-center py-4 mt-5 border-top">
+        <div class="container">
+            <div class="mb-3">
+                <a href="kontakt.html" class="text-decoration-none text-muted me-3">Kontakt</a>
+                <a href="impressum.html" class="text-decoration-none text-muted me-3">Impressum</a>
+                <a href="datenschutz.html" class="text-decoration-none text-muted">Datenschutz</a>
+            </div>
+            <p class="mb-0">&copy; 2026 Balance Yoga Wiesbaden. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="bootstrap/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

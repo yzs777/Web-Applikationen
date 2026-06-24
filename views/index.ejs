@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance Yoga Wiesbaden - Startseite</title>
+
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">Balance Yoga Wiesbaden</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Startseite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kurse.html">Kursplan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trainer.html">Trainerprofile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="workshops.html">Workshops & Retreats</a>
+                    </li>
+                </ul>
+
+                <!--Login und Mein Konto oben rechts-->
+                <ul class="navbar-nav ms-auto"> 
+                    <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>    
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-pflaume fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-circle me-1"></i>Mein Konto
+                        </a>
+
+                        <!--Dropdown oben rechts bei mein Konto-->
+                        <ul class="dropdown-menu dropdown-menu-end border-0 shadow-sm" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="user-dashboard.html">Mein Dashboard</a></li>
+                            <li><a class="dropdown-item" href="profil-bearbeiten.html">Profil bearbeiten</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="index.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    
+
+
+    <!--Hero-Section-->
+
+    <div class="b-example-divider"></div>
+
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=700&q=80"
+                    class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Finde deine innere Balance in Wiesbaden</h1>
+                <p class="lead">Erlebe einen Ort der Ruhe und Kraft. In unserem Studio im Herzen von Wiesbaden bieten
+                    wir dir maßgeschneiderte Yoga-Kurse, professionelle Trainer und eine Gemeinschaft, die dich auf
+                    deinem Weg begleitet.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="kurse.html" class="btn btn-primary btn-lg px-4 me-md-2" role="button">Kursplan ansehen</a>
+                   <a href="trainer.html" class="btn btn-outline-secondary btn-lg px-4" role="button">Unsere Trainer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kursangebote als Karten-->
+
+    <div class="container py-5">
+
+        <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold">Unsere Kursangebote</h2>
+            <p class=" lead text-muted">Entdecke unsere vielfältigen Yoga-Kurse, die für alle Levels und Bedürfnisse
+                geeignet sind.</p>
+        </div>
+
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top card-img-fixed" alt="Hatha Yoga">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Hatha Yoga (Anfänger)</h5>
+                        <p class="card-text text-muted flex-grow-1">Perfekt für den Einstieg. Wir lernen die
+                            grundlegenden Asanas (Körperhaltungen) und Atemtechniken in einer ruhigen, stressfreien
+                            Atmosphäre kennen.</p>
+                       <a href="login.html" class="btn btn-primary w-100" role="button">Jetzt buchen</a>
+                    </div>
+                    </div>
+                </div>
+            
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1607914660217-754fdd90041d?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHZpbnlhc2ElMjB5b2dhfGVufDB8fDB8fHww"
+                        class="card-img-top card-img-fixed" alt="Vinyasa Yoga">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Vinyasa Flow (Dynamisch)</h5>
+                        <p class="card-text text-muted flex-grow-1">Fließende Bewegungen im Rhythmus deines Atems. Ein
+                            kraftvoller Kurs, der deine Ausdauer stärkt und gleichzeitig den Geist völlig zur Ruhe
+                            bringt.</p>
+                        <a href="login.html" class="btn btn-primary w-100" role="button">Jetzt buchen</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top card-img-fixed" alt="Workshops & Retreats">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Workshops & Retreats</h5>
+                        <p class="card-text text-muted flex-grow-1">Tiefe Entspannung an Wochenenden. Unsere speziellen
+                            Workshops bieten dir Raum für ausgiebige Meditation und Klangschalen-Therapie.</p>
+                        <a href="login.html" class="btn btn-primary w-100" role="button">Jetzt buchen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer-->
+
+    <footer class="bg-light text-center py-4 mt-5 border-top">
+        <div class="container">
+            <div class="mb-3">
+                <a href="kontakt.html" class="text-decoration-none text-muted me-3">Kontakt</a>
+                <a href="impressum.html" class="text-decoration-none text-muted me-3">Impressum</a>
+                <a href="datenschutz.html" class="text-decoration-none text-muted">Datenschutz</a>
+            </div>
+            <p class="mb-0">&copy; 2026 Balance Yoga Wiesbaden. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="bootstrap/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
