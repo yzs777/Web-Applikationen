@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1781871863118,
+    "firstName": "Taner",
+    "lastName": "Yildiz",
+    "email": "taner.yildiz@hotmail.de",
+    "password": "$2b$10$QqNJc2ovmCC7VqrEz1TYJuskRrDAVj2GbSqZlW3KAIoOAXQUSVmyG",
+    "role": "admin"
+  },
+  {
+    "id": 1781878573587,
+    "firstName": "Taner",
+    "lastName": "Yildiz",
+    "email": "yzsz@hotmail.de",
+    "password": "$2b$10$W1UVvPtBSparHhwkbPlyduDdXITiBQPni.70sSyJDpmaCziIWREGO",
+    "role": "admin"
+  }
+]

@@ -1,8 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-//Passwörter verschlüsseln
-var bcrypt = require('bcrypt');
+
 
 //users.json-Datei lesen und schreiben
 var fs = require('fs');
@@ -12,11 +11,9 @@ var path = require('path');
 //Pfad zur users.json-Datei
 var usersFilePath = path.join(__dirname, '..', 'models', 'users.json');
 
-// jsonwebtoken wird verwendet, um nach erfolgreichem Login einen Token zu erstellen
-var jwt = require('jsonwebtoken');
 
-// Geheimer Schlüssel zum Signieren des Tokens
-var JWT_SECRET = 'balance_yoga_secret';
+
+
 
 //Benutzer aus users.json lesen
 function readUsers() {
@@ -145,43 +142,6 @@ router.post('/login', function(req, res, next){
 
 });
 
-//Middleware zum Schutz von Routen
-function requireLogin(req, res, next) {
-  // Token aus dem Cookie auslesen
-  var token = req.cookies.token;
 
-  // Wenn kein Token vorhanden ist, zur Loginseite weiterleiten
-  if (!token) {
-    return res.redirect('/login');
-  }
-
-  // Token prüfen
-  jwt.verify(token, JWT_SECRET, function(err, decoded) {
-    // Wenn der Token ungültig ist, zur Loginseite weiterleiten
-    if (err) {
-      return res.redirect('/login');
-    }
-
-    // Benutzerinformationen aus dem Token speichern
-    req.user = decoded;
-
-    // Weiter zur eigentlichen geschützten Route
-    next();
-  });
-}
-
-// Geschützte Admin-Route
-router.get('/admin', requireLogin, function(req, res, next) {
-  res.sendFile(path.join(__dirname, '..', '/public/admin.html'));
-});
-
-// Route zum Ausloggen
-router.get('/logout', function(req, res, next) {
-  // Cookie mit dem Token löschen
-  res.clearCookie('token');
-
-  // nach dem Ausloggen zur Loginseite weiterleiten
-  res.redirect('/login');
-});
 
 module.exports = router;

@@ -1,3 +1,35 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fehler - Balance Yoga Wiesbaden</title>
+
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+
+    <div class="container text-center my-5 pt-5">
+        <h1 class="fw-bold text-pflaume">Ups, da ist etwas schiefgelaufen.</h1>
+
+        <h2 class="text-muted">
+            Fehler <%= error.status || 500 %>
+        </h2>
+
+        <p class="mt-3">
+            <%= message %>
+        </p>
+
+        <a href="/" class="btn btn-primary mt-3">
+            Zurück zur Startseite
+        </a>
+    </div>
+
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
