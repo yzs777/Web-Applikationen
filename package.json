@@ -1,0 +1,21 @@
+{
+  "name": "web-projekt",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "bootstrap": "^5.3.8",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^6.0.1",
+    "express": "^4.22.2",
+    "express-fileupload": "^1.5.2",
+    "express-session": "^1.19.0",
+    "http-errors": "~1.6.3",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.11.0"
+  }
+}

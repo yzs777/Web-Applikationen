@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance Yoga Wiesbaden - Kurse</title>
+
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    
+
+    <!-- Navigation-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">Balance Yoga Wiesbaden</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Startseite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kurse.html">Kursplan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trainer.html">Trainerprofile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="workshops.html">Workshops & Retreats</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto"> 
+                    <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>    
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-pflaume fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-circle me-1"></i>Mein Konto
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end border-0 shadow-sm" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="user-dashboard.html">Mein Dashboard</a></li>
+                            <li><a class="dropdown-item" href="profil-bearbeiten.html">Profil bearbeiten</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="index.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Kurse -->
+
+<main class="container mt-5 pt-5 mb-5">
+        <div class="text-center my-5">
+            <h1 class="display-4 fw-bold text-pflaume">Unser Kursplan</h1>
+            <p class="lead text-muted">Finde die passende Praxis für dein Erfahrungslevel und deinen Rhythmus.</p>
+        </div>
+
+        <div class="card border-0 shadow-sm p-4 mb-5 filter-card">
+            <h5 class="fw-bold mb-3 text-pflaume">
+                <i class="fas fa-filter me-2"></i>Kurse filtern
+            </h5>
+
+            <!--Kurse Filter-->
+
+            <!--Kategorien-->
+
+            <form class="row g-3">
+                <div class="col-md-3">
+                    <label class="form-label small fw-bold text-muted">Kategorie</label>
+                    <select class="form-select border-0 bg-light">
+                        <option>Alle Kategorien</option>
+                        <option>Entspannung</option>
+                        <option>Dynamisch</option>
+                        <option>Meditation</option>
+                    </select>
+                </div>
+
+                <!--Erfahrungslevel-->
+
+                <div class="col-md-3">
+                    <label class="form-label small fw-bold text-muted">Erfahrungslevel</label>
+                    <select class="form-select border-0 bg-light">
+                        <option>Alle Level</option>
+                        <option>Anfänger</option>
+                        <option>Mittelstufe</option>
+                        <option>Fortgeschritten</option>
+                    </select>
+                </div>
+
+                <!--Trainer-->
+
+                <div class="col-md-3">
+                    <label class="form-label small fw-bold text-muted">Trainer</label>
+                    <select class="form-select border-0 bg-light">
+                        <option>Alle Trainer</option>
+                        <option>Sarah</option>
+                        <option>Michael</option>
+                        <option>Elena</option>
+                    </select>
+                </div>
+
+                <!--Tageszeit-->
+                <div class="col-md-3">
+                    <label class="form-label small fw-bold text-muted">Tageszeit</label>
+                    <select class="form-select border-0 bg-light">
+                        <option>Ganztägig</option>
+                        <option>Morgenkurse</option>
+                        <option>Mittagkurse</option>
+                        <option>Abendkurse</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        
+        <!--Aufklappbare Termine für jeden Wochentag-->
+        
+        <div class="accordion border-0 shadow-sm course-accordion" id="courseAccordion">
+            
+            <!--Montags Kurse-->
+
+            <!--Aufklappbar-->
+            <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header">
+                    <button class="accordion-button fw-bold py-3 accordion-btn-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMontag">
+                        <i class="far fa-calendar-alt me-2 text-muted"></i> Montag
+                    </button>
+                </h2>
+                
+                
+
+                <div id="collapseMontag" class="accordion-collapse collapse show">
+                    <div class="accordion-body bg-white p-4">
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            
+                            <!--Card für Hatha Yoga-->
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+
+                                        <!--oben links Kategorie und oben rechts Uhrzeit-->
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Entspannung</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 09:00 Uhr</span>
+                                        </div>
+                                        
+                                        <!--Beschreibung und Überblick mit Symbole-->
+
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Hatha Yoga Basic</h4>
+                                        <p class="card-text text-muted small mb-3">Ruhige und gehaltene Positionen zum Aufbau einer sauberen Technik und für mehr körperliche Balance.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Anfänger</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Sarah</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Shanti-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>90 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>15,00 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>20</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Dynamisch</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 12:15 Uhr</span>
+                                        </div>
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Power Yoga</h4>
+                                        <p class="card-text text-muted small mb-3">Ein dynamischer, schweißtreibender Flow mit Fokus auf Kraftaufbau, Ausdauer und Core-Stabilität. Perfekt, um sich richtig auszupowern.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Fortgeschritten</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Elena</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Prana-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>45 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>12,00 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>15</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Dynamisch</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 18:30 Uhr</span>
+                                        </div>
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Vinyasa Flow</h4>
+                                        <p class="card-text text-muted small mb-3">Fließende Bewegungen im Einklang mit dem Atem. Kraftvoll und kreativ gestaltete Sequenzen zum Feierabend.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Mittelstufe</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Michael</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Prana-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>75 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>18,00 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>15</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Meditation</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 20:00 Uhr</span>
+                                        </div>
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Yin Yoga & Klang</h4>
+                                        <p class="card-text text-muted small mb-3">Tiefenentspannung durch langes Halten der Positionen, begleitet von beruhigenden Klangschalen.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Alle Level</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Sarah</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Lotus-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>60 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>15,00 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>12</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Dienstags-Kurse-->
+            
+            <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header">
+                    <button class="accordion-button fw-bold py-3 accordion-btn-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDienstag">
+                        <i class="far fa-calendar-alt me-2 text-muted"></i> Dienstag
+                    </button>
+                </h2>
+                
+                <!--Aufklappbar-->
+
+                <div id="collapseDienstag" class="accordion-collapse collapse show">
+                    <div class="accordion-body bg-white p-4">
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            
+                            <!--Card für Kurs-->
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+
+                                        <!--oben links Kategorie und oben rechts Uhrzeit-->
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Dynamisch</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 07:30 Uhr</span>
+                                        </div>
+                                        
+                                        <!--Beschreibung und Überblick mit Symbole-->
+
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Vinyasa Flow </h4>
+                                        <p class="card-text text-muted small mb-3">Fließende Bewegungen im Rhythmus des Atems. Baut Kraft auf, fördert die Beweglichkeit und bringt den Kreislauf in Schwung.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Mittelstufe</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Elena</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong></strong>Prana-Raum</div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>60 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>15,00 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>15</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Entspannung</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 10:00 Uhr</span>
+                                        </div>
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Hatha Yoga Basic</h4>
+                                        <p class="card-text text-muted small mb-3">Ruhige und gehaltene Positionen zum Aufbau einer sauberen Technik und für mehr körperliche Balance.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Anfänger</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Sarah</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Shanti-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>75 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>15,00 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>20</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Dynamisch</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 18:30 Uhr</span>
+                                        </div>
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Power Yoga</h4>
+                                        <p class="card-text text-muted small mb-3">Ein dynamischer, schweißtreibender Flow mit Fokus auf Kraftaufbau, Ausdauer und Core-Stabilität. Perfekt, um sich richtig auszupowern.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Fortgeschritten</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Michael</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Prana-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>60 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>15,00 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>15</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Meditation</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 19:00 Uhr</span>
+                                        </div>
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Yin Yoga & Klang</h4>
+                                        <p class="card-text text-muted small mb-3">Langes, passives Halten der Positionen (Asanas), um das tiefliegende Bindegewebe und die Faszien zu erreichen, begleitet von Klangschalen.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Alle Level</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Sarah</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Lotus-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>90 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>18,00 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>12</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--Mittwochs-Kurse-->
+            
+            <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header">
+                    <button class="accordion-button fw-bold py-3 accordion-btn-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMittwoch">
+                        <i class="far fa-calendar-alt me-2 text-muted"></i> Mittwoch
+                    </button>
+                </h2>
+                
+                <!--Aufklappbar-->
+
+                <div id="collapseMittwoch" class="accordion-collapse collapse show">
+                    <div class="accordion-body bg-white p-4">
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            
+                            <!--Card für Kurs-->
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+
+                                        <!--oben links Kategorie und oben rechts Uhrzeit-->
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Entspannung</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 09:00 Uhr</span>
+                                        </div>
+                                        
+                                        <!--Beschreibung und Überblick mit Symbole-->
+
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Hatha Yoga Basic</h4>
+                                        <p class="card-text text-muted small mb-3">Ideal, um die Basics des Yoga zu erlernen oder zu vertiefen. Der Fokus liegt auf der korrekten Ausrichtung und bewusster Atmung.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Anfänger</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Michael</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong></strong>Shanti-Raum</div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>75 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>15,00 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>20</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Meditation</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 11:00 Uhr</span>
+                                        </div>
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Chakra Meditation</h4>
+                                        <p class="card-text text-muted small mb-3">Eine tiefgehende geführte Meditation zur Ausrichtung der Energiezentren. Beinhaltet längeres, stilles Sitzen.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Alle Level</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Sarah</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Lotus-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>60 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>12,00 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>15</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Dynamisch</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 12:15 Uhr</span>
+                                        </div>
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Core Flow Yoga</h4>
+                                        <p class="card-text text-muted small mb-3">Ein kompakter, fokussierter Kurs, der besonders die Rumpfmuskulatur stärkt und die innere Stabilität fördert.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Mittelstufe</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Elena</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Prana-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>45 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>12,00 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>15</strong></div>
+                                        </div>
+                                       <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Dynamisch</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 18:00 Uhr</span>
+                                        </div>
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Ashtanga Primary Series</h4>
+                                        <p class="card-text text-muted small mb-3">Eine körperlich fordernde, festgelegte Serie von Asanas. Bringt dich ins Schwitzen und baut massiv Kraft auf.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Fortgeschritten</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Michael</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Prana-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>90 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>18,00 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>15</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Donnerstags-Kurse-->
+            
+            <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header">
+                    <button class="accordion-button fw-bold py-3 accordion-btn-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDonnerstag">
+                        <i class="far fa-calendar-alt me-2 text-muted"></i> Donnerstag
+                    </button>
+                </h2>
+                
+                <!--Aufklappbar-->
+
+                <div id="collapseDonnerstag" class="accordion-collapse collapse show">
+                    <div class="accordion-body bg-white p-4">
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            
+                            <!--Card für Kurs-->
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+
+                                        <!--oben links Kategorie und oben rechts Uhrzeit-->
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Entspannung</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 10:00 Uhr</span>
+                                        </div>
+                                        
+                                        <!--Beschreibung und Überblick mit Symbole-->
+
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Rücken Yoga</h4>
+                                        <p class="card-text text-muted small mb-3">Gezielte Übungen zur Stärkung der Rückenmuskulatur und zur Lösung von Verspannungen im Nacken- und Schulterbereich.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Alle Level</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Elena</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong></strong>Shanti-Raum</div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>60 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>15,00 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>20</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Meditation</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 12:30 Uhr</span>
+                                        </div>
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Pranayama & Asana</h4>
+                                        <p class="card-text text-muted small mb-3">Eine beruhigende Kombination aus leichten Dehnungen und tiefgehenden Atemtechniken zur Stressreduktion.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Alle Level</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Sarah</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Lotus-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>45 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>12,00 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>15</strong></div>
+                                        </div>
+                                       <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Dynamisch</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 17:30 Uhr</span>
+                                        </div>
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Vinyasa Intense</h4>
+                                        <p class="card-text text-muted small mb-3">Ein intensiver Flow, der Zeit für komplexere Haltungen und Umkehrhaltungen bietet und die Ausdauer fordert.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Fortgeschritten</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Michael</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Prana-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>90 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>18,50 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>15</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Dynamisch</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 19:30 Uhr</span>
+                                        </div>
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Power Yoga</h4>
+                                        <p class="card-text text-muted small mb-3">Ein dynamischer, schweißtreibender Flow mit Fokus auf Kraftaufbau, Ausdauer und Core-Stabilität. Perfekt, um sich richtig auszupowern.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Fortgeschritten</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Michael</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Shanti-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>45 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>13,00 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>15</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Freitagskurse-->
+
+            <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header">
+                    <button class="accordion-button fw-bold py-3 accordion-btn-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFreitag">
+                        <i class="far fa-calendar-alt me-2 text-muted"></i> Freitag
+                    </button>
+                </h2>
+                
+                <!--Aufklappbar-->
+
+                <div id="collapseFreitag" class="accordion-collapse collapse show">
+                    <div class="accordion-body bg-white p-4">
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            
+                            <!--Card für Kurs-->
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+
+                                        <!--oben links Kategorie und oben rechts Uhrzeit-->
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Entspannung</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 08:00 Uhr</span>
+                                        </div>
+                                        
+                                        <!--Beschreibung und Überblick mit Symbole-->
+
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Hatha Yoga Basic</h4>
+                                        <p class="card-text text-muted small mb-3">Ruhige und gehaltene Positionen zum Aufbau einer sauberen Technik und für mehr körperliche Balance.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Anfänger</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Sarah</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong></strong>Shanti-Raum</div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>75 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>16,00 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>20</strong></div>
+                                        </div>
+                                      <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Dynamisch</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 12:15 Uhr</span>
+                                        </div>
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Core Flow Yoga</h4>
+                                        <p class="card-text text-muted small mb-3">Ein kompakter, fokussierter Kurs, der besonders die Rumpfmuskulatur stärkt und die innere Stabilität fördert.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Mittelstufe</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Elena</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Prana-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>45 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>12,50 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>15</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Meditation</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 17:00 Uhr</span>
+                                        </div>
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Yin Yoga & Klang</h4>
+                                        <p class="card-text text-muted small mb-3">Langes, passives Halten der Positionen (Asanas), um das tiefliegende Bindegewebe und die Faszien zu erreichen, begleitet von Klangschalen.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Alle Level</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Michael</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Lotus-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>90 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>19,00 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>12</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Meditation</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 19:00 Uhr</span>
+                                        </div>
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Atem & Stille</h4>
+                                        <p class="card-text text-muted small mb-3">Geführte Atemtechniken gefolgt von einer tiefen, lautlosen Endentspannung, um die Woche mental abzuschließen.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Alle Level</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Sarah</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Shanti-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>60 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>14,00 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>15</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Samstags-Kurse-->
+
+            <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header">
+                    <button class="accordion-button fw-bold py-3 accordion-btn-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSamstag">
+                        <i class="far fa-calendar-alt me-2 text-muted"></i> Samstag
+                    </button>
+                </h2>
+                
+                <!--Aufklappbar-->
+
+                <div id="collapseSamstag" class="accordion-collapse collapse show">
+                    <div class="accordion-body bg-white p-4">
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            
+                            <!--Card für Kurs-->
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+
+                                        <!--oben links Kategorie und oben rechts Uhrzeit-->
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Dynamisch</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 10:30 Uhr</span>
+                                        </div>
+                                        
+                                        <!--Beschreibung und Überblick mit Symbole-->
+
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Vinyasa Flow</h4>
+                                        <p class="card-text text-muted small mb-3">Fließende Bewegungen im Einklang mit dem Atem. Kraftvoll und kreativ gestaltete Sequenzen zum Start ins Wochenende.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Mittelstufe</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Elena</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong></strong>Prana-Raum</div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>75 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>16,50 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>15</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Meditation</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 13:00 Uhr</span>
+                                        </div>
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Achtsamkeits-Meditation</h4>
+                                        <p class="card-text text-muted small mb-3">Eine ruhige Praxis zur Förderung der inneren Klarheit und geistigen Präsenz durch fokussierte Atemübungen.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Alle Level</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Sarah</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Lotus-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>60 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>13,50 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>15</strong></div>
+                                        </div>
+                                       <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Entspannung</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 17:00 Uhr</span>
+                                        </div>
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Hatha Alignment</h4>
+                                        <p class="card-text text-muted small mb-3">Ein Kurs mit extrem starkem Fokus auf die biomechanisch korrekte Ausführung der einzelnen Haltungen.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Mittelstufe</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Michael</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Shanti-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>75 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>15,50 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>20</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Entspannung</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 19:00 Uhr</span>
+                                        </div>
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Restorative Yoga</h4>
+                                        <p class="card-text text-muted small mb-3">Absolute Erholung. Mit vielen Hilfsmitteln gestützte Haltungen zur kompletten Regeneration des Nervensystems.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Anfänger</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Michael</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Lotus-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>75 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>15,00 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>12</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Sonntagskurse-->
+
+         <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header">
+                    <button class="accordion-button fw-bold py-3 accordion-btn-custom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSonntag">
+                        <i class="far fa-calendar-alt me-2 text-muted"></i> Sonntag
+                    </button>
+                </h2>
+                
+                <!--Aufklappbar-->
+
+                <div id="collapseSonntag" class="accordion-collapse collapse show">
+                    <div class="accordion-body bg-white p-4">
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            
+                            <!--Card für Kurs-->
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+
+                                        <!--oben links Kategorie und oben rechts Uhrzeit-->
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Dynamisch</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 09:30 Uhr</span>
+                                        </div>
+                                        
+                                        <!--Beschreibung und Überblick mit Symbole-->
+
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Morning Glow Vinyasa</h4>
+                                        <p class="card-text text-muted small mb-3">Ein fließender, aufbauender Kurs, der Gelenke mobilisiert und neue Energie für den Sonntag liefert.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Mittelstufe</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Michael</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong></strong>Prana-Raum</div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>75 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>16,00 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>15</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Meditation</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 11:30 Uhr</span>
+                                        </div>
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Chakra-Meditation</h4>
+                                        <p class="card-text text-muted small mb-3">: Eine tiefgehende geführte Meditation zur Ausrichtung der Energiezentren. Beinhaltet längeres, stilles Sitzen.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Alle Level</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Sarah</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Lotus-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>60 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>14,50 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>15</strong></div>
+                                        </div>
+                                       <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Entspannung</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 14:00 Uhr</span>
+                                        </div>
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Rücken Yoga</h4>
+                                        <p class="card-text text-muted small mb-3">Fokus auf die Entlastung der Wirbelsäule und die Kräftigung der unterstützenden Muskulatur.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Anfänger</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Elena</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Shanti-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>60 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>14,00 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>20</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 border-0 shadow-sm course-item-card">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <span class="badge rounded-pill px-3 py-2 badge-eukalyptus">Entspannung</span>
+                                            <span class="text-muted small fw-bold"><i class="far fa-clock me-1"></i> 18:30 Uhr</span>
+                                        </div>
+                                        <h4 class="card-title fw-bold my-2 text-pflaume">Slow Flow Yoga</h4>
+                                        <p class="card-text text-muted small mb-3">Ein entschleunigter Mix aus sanftem Hatha und fließenden Elementen, um geistige und körperliche Balance zu finden.</p>
+                                        <hr class="text-muted opacity-25">
+                                        <div class="row g-2 mb-3 text-start small text-muted">
+                                            <div class="col-6"><i class="fas fa-layer-group me-1"></i> Level: <strong>Mittelstufe</strong></div>
+                                            <div class="col-6"><i class="fas fa-user-circle me-1"></i> Trainer: <strong>Elena</strong></div>
+                                            <div class="col-6"><i class="fas fa-door-open me-1"></i> Raum: <strong>Shanti-Raum</strong></div>
+                                            <div class="col-6"><i class="fas fa-hourglass-half me-1"></i> Dauer: <strong>75 Min.</strong></div>
+                                            <div class="col-6"><i class="fas fa-euro-sign me-1"></i> Preis: <strong>17,50 €</strong></div>
+                                            <div class="col-6"><i class="fas fa-users me-1"></i> Plätze: <strong>20</strong></div>
+                                        </div>
+                                        <a href="login.html" class="btn btn-primary w-100 py-2 shadow-sm btn-rounded">Jetzt Platz sichern</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4 mt-5 border-top">
+        <div class="container">
+            <div class="mb-3">
+                <a href="kontakt.html" class="text-decoration-none text-muted me-3">Kontakt</a>
+                <a href="impressum.html" class="text-decoration-none text-muted me-3">Impressum</a>
+                <a href="datenschutz.html" class="text-decoration-none text-muted">Datenschutz</a>
+            </div>
+            <p class="mb-0">&copy; 2026 Balance Yoga Wiesbaden. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="bootstrap/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
