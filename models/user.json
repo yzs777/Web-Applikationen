@@ -14,5 +14,13 @@
     "email": "yzsz@hotmail.de",
     "password": "$2b$10$W1UVvPtBSparHhwkbPlyduDdXITiBQPni.70sSyJDpmaCziIWREGO",
     "role": "admin"
+  },
+  {
+    "id": 1782724036144,
+    "firstName": "Arjun",
+    "lastName": "Vinod",
+    "email": "arjunvinodnair06@gmail.com",
+    "password": "$2b$10$bgkzWUhkJzdLRPCxFOg5Q.U5Guh2uYOeZuucRrmqYxYJACCW3nmMq",
+    "role": "user"
   }
 ]
