@@ -42,48 +42,6 @@ router.get('/login', function(req, res, next) {
 });
 
 
-//POST-Route für Registrierung
-router.post('/register', function(req, res, next) {
-  // vorhandene Benutzer aus users.json lesen
-  var users = readUsers();
-
-  // prüfen, ob die E-Mail bereits registriert ist
-  var existingUser = users.find(function(user) {
-    return user.email === req.body.email;
-  });
-
-  // falls E-Mail schon existiert, Registrierung abbrechen
-  if (existingUser) {
-    return res.send('Diese E-Mail ist bereits registriert.');
-  }
-
-  // Passwort aus dem Formular mit bcrypt verschlüsseln
-  bcrypt.hash(req.body.password, 10, function(err, hashedPassword) {
-    // falls beim Verschlüsseln ein Fehler entsteht
-    if (err) {
-      return next(err);
-    }
-
-    // neues Benutzerobjekt erstellen
-    var newUser = {
-      id: Date.now(),
-      firstName: req.body.firstName,
-      lastName: req.body.lastName,
-      email: req.body.email,
-      password: hashedPassword,
-      role: 'user'
-    };
-
-    // neuen Benutzer zur Benutzerliste hinzufügen
-    users.push(newUser);
-
-    // aktualisierte Benutzerliste in users.json speichern
-    writeUsers(users);
-
-    // Antwort an den Browser senden
-    res.send('Benutzer wurde erfolgreich registriert.');
-  });
-});
 
 //POST-Route für Login
 router.post('/login', function(req, res, next){
